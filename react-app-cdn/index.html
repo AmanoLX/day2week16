@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/react@16.13.0/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+    <title>Hello World Ironhackers!</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+    //getting the element with id root
+      const root = document.getElementById("root");
+    //creating an element using the document object
+      const mainHeading = document.createElement("h1");
+      mainHeading.innerText = "Hello there Ironhackers! ";
+    // appending a child to the element root
+      root.appendChild(mainHeading);
+
+      //example of element created using the React Object
+    //   const element = React.createElement("div", {
+    //     className: "container",
+    //     children: [
+    //       React.createElement("h1", {
+    //         children: "Are you React-ing Ironhackers?",
+    //       }),
+    //       React.createElement("h3", {
+    //         children: ["Time now is: ", `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`],
+    //       }),
+           //Button element with a onclick event
+    //       React.createElement("button", {
+    //         children: ["Update time: "],
+    //         onClick: () => console.log("I am being clicked"),
+    //       }),
+    //     ],
+    //   });
+
+        //example of element created without using react
+      //   const element = (
+      //     <div className='container'>
+      //       <h1>Are you React-ing Ironhackers?</h1>
+      //       <h3>
+      //         Time now is: {new Date().getHours()}:{new Date().getMinutes()}:{new Date().getSeconds()}
+      //       </h3>
+      //     </div>
+      //   );
+        //Using react to render a new element in the designated element
+    //   ReactDOM.render(element, root);
+    </script>
+  </body>
+</html>
